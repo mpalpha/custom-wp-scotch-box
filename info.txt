@@ -1,0 +1,22 @@
+phpMyAdmin URI: http://192.168.2.10/phpmyadmin
+phpMyAdmin User: root
+phpMyAdmin Password: root
+
+SSH/Virtual Machine Host: 192.168.2.10/
+SSH User: vagrant
+SSH Password: vagrant
+
+Database Name: scotchbox
+Database User: root
+Database Password: root
+Database Host: localhost / 127.0.0.1
+
+WordPress URI: http://192.168.2.10/
+
+Server Info URI: http://192.168.2.10/info.php
+
+Installed Software:
+MySQL, phpMyAdmin, Ruby, Composer,
+Laravel Installer, Git, cURL,
+GD/Imagick, NPM, Grunt, Bower,
+Yeoman, Gulp
