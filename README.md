@@ -1,6 +1,6 @@
 Scotch Box
 ==========
-
+### tested with vagrant 1.6.5 and VirtualBox-4.3.18-96516 for Windows.*
 ## Check out the official docs at: [box.scotch.io][16]
 ## Read the article at [scotch.io][17]
 
