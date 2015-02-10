@@ -1,6 +1,6 @@
 # Customized Scotch-Box
 ## Instructions:
-### tested with vagrant 1.6.5 and VirtualBox-4.3.18-96516 for Windows.*
+### Tested with Vagrant 1.6.5 and VirtualBox-4.3.18-96516 for Windows.*
 
 #### Install and setup the local development server:  
 Download and Install Vagrant  
