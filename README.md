@@ -9,7 +9,7 @@ Clone my custom Scotch Box GitHub Repository
 Create a new project directory and open an elevated command prompt there (ex: c:/src/myproject)  
 Run “vagrant up” (this will download and install the virtual machine with all software running including wordpress)  
 Access Your Project at http://192.168.2.10/ within a web browser and physical public directory inside your project folder (ex: c:/src/myproject/public)  
-All Credentials and other information is located in “/public/info.txt”  
+All Credentials and other Details are located in “/public/info.txt”  
 
 #### Install the custom base WordPress theme: 
 Open an elevated command prompt to c:/src/myproject/public/wp-content/themes  
