@@ -1,6 +1,38 @@
+# Customized Scotch-Box
+## Instructions:
+### tested with vagrant 1.6.5 and VirtualBox-4.3.18-96516 for Windows.*
+
+#### Install and setup the local development server:  
+Download and Install Vagrant  
+Download and Install VirtualBox  
+Clone my custom Scotch Box GitHub Repository  
+Create a new project directory and open an elevated command prompt there (ex: c:/src/myproject)  
+Run “vagrant up” (this will download and install the virtual machine with all software running including wordpress)  
+Access Your Project at http://192.168.2.10/ within a web browser and physical public directory inside your project folder (ex: c:/src/myproject/public)  
+All Credentials and other information is located in “/public/info.txt”  
+
+#### Install the custom base WordPress theme: 
+Open an elevated command prompt to c:/src/myproject/public/wp-content/themes  
+Clone my custom base WordPress Theme from my GitHub Repository (“git clone https://github.com/mpalpha/FoundationPress.git”)  
+Rename the folder “FoundationPress” as desired.  
+Login into the WordPress CMS and change the theme to your custom theme http://192.168.2.10/wp-admin/  
+
+#### Compile theme assets:  
+ Within windows elevated command prompt: (requires git, node.js installed and paths configured properly)  
+1) Run the following commands within the custom theme directory. “npm I” “bower I” “grunt”  
+
+#### Within the VM:  
+1) Run “vagrant ssh” from an elevated command prompt within the project directory  
+2) Within the vagrant shell (ssh) run “cd /vagrant/public/wp-content/themes/powerup” (or your custom theme folder path)  
+3) Run the following commands. “npm I” “bower I” “grunt”  
+
+#### To suspend the virtual machine use “vagrant suspend” within an elevated command prompt.  
+
+==========
+
 Scotch Box
 ==========
-### tested with vagrant 1.6.5 and VirtualBox-4.3.18-96516 for Windows.*
+
 ## Check out the official docs at: [box.scotch.io][16]
 ## Read the article at [scotch.io][17]
 
