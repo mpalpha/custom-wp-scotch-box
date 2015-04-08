@@ -24,7 +24,7 @@ Login into the WordPress CMS and change the theme to your custom theme http://19
 #### Within the VM:  
 1) Run “vagrant ssh” from an elevated command prompt within the project directory  
 2) Within the vagrant shell (ssh) run “cd /vagrant/public/wp-content/themes/powerup” (or your custom theme folder path)  
-3) Run the following commands. “npm I” “bower I” “grunt”  
+3) Run the following commands. “npm i” “bower i” “grunt”  
 
 #### To suspend the virtual machine use “vagrant suspend” within an elevated command prompt.  
 
