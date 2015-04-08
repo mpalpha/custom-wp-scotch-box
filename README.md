@@ -19,7 +19,7 @@ Login into the WordPress CMS and change the theme to your custom theme http://19
 
 #### Compile theme assets:  
  Within windows elevated command prompt: (requires git, node.js installed and paths configured properly)  
-1) Run the following commands within the custom theme directory. “npm I” “bower I” “grunt”  
+1) Run the following commands within the custom theme directory. “npm i” “bower i” “grunt”  
 
 #### Within the VM:  
 1) Run “vagrant ssh” from an elevated command prompt within the project directory  
