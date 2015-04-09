@@ -1,5 +1,24 @@
 #!/usr/bin/env bash
 
+# Ubuntu utilities
+. '/vagrant/vagrant-shell-scripts/ubuntu.sh'
+
+# set php.ini options
+printf "\n"
+printf "\r\nphp.ini: updating...upload_max_filesize"
+printf "\n"
+php-settings-update 'upload_max_filesize' '240M'
+printf "\r\nphp.ini: updating...post_max_size"
+printf "\n"
+php-settings-update 'post_max_size' '50M'
+printf "\r\nphp.ini: updating...max_execution_time"
+printf "\n"
+php-settings-update 'max_execution_time' '100'
+printf "\r\nphp.ini: updating...max_input_time"
+printf "\n"
+php-settings-update 'max_input_time' '223'
+
+# update composer
 printf "\n"
 printf "\r\nComposer: updating..."
 /usr/local/bin/composer self-update > /dev/null 2>&1
