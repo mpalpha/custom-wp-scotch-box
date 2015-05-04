@@ -1,0 +1,1 @@
+* * * * * sudo su root /var/www/vagrant-shell-scripts/mysqldump.sh
