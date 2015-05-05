@@ -69,8 +69,8 @@ then
 printf "\rphpMyAdmin not found, installing..."
 
 #setup database
-MYSQL_PASSWORD="$DB_USER"
-SYS_PASSWORD="$DB_PASS"
+MYSQL_PASSWORD="root"
+SYS_PASSWORD="root"
 
 printf "\n"
 printf "\r\nphpMyAdmin: configuring..."
@@ -99,13 +99,19 @@ apt-get -y install phpmyadmin > /dev/null 2>&1
 
 echo "Include /etc/phpmyadmin/apache.conf" | tee -a /etc/apache2/apache2.conf > /dev/null 2>&1
 
+# Restart services
+printf "\rphpMyAdmin: applying settings..."
+service apache2 restart > /dev/null 2>&1
+service mysql restart > /dev/null 2>&1
+
 printf "\rphpMyAdmin: installation complete"
 
 else
 
-printf "\rphpMyAdmin: found, skipping installation"
+printf "\rphpMyAdmin was found, skipping installation"
 
 fi
+
 
 printf "\rimporting /db/custom.sql..."
 
